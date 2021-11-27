@@ -55,14 +55,14 @@ body {
 }
 
 a {
-    color: black;
+    color: rgba(4, 4, 56, 0.761);
 }
 
 
 /* HEADER */
 
 header {
-    background-color: rgb(144, 247, 134);
+    background-color: rgb(87, 138, 233);
     padding-top: 30px;
 }
 
@@ -110,14 +110,14 @@ header .coluna ul li {
 
 header .coluna ul li a {
     font-size: 1rem;
-    color: black;
+    color: rgba(4, 4, 56, 0.761);
 }
 
 
 /* PÁGINA INICIAL */
 
 main {
-    background-color: rgb(144, 247, 134);
+    background-color: rgb(87, 138, 233);
 }
 
 main .container {
@@ -165,29 +165,51 @@ main .coluna section ul li p {}
 /* FOOTER */
 
 footer {
-    background-color: rgb(144, 247, 134);
+    background-color: rgb(87, 138, 233);
 }
 
 footer .container {}
 
-footer nav {
+footer div {
     mix-blend-mode: luminosity;
 }
 
-footer nav ul {}
+footer div ul {}
 
-footer nav ul li {}
+footer div ul li {}
 
-footer nav .redes-sociais {
+footer div .redes-sociais {
     display: inline-flex;
     text-align-last: center;
-    margin-left: 40%;
 }
 
-footer nav .redes-sociais li {
+footer div .redes-sociais li {
     margin: 0px 10px 0px 10px;
 }
 
-footer nav .redes-sociais li a img {
+footer div .redes-sociais li a img {
     max-width: 35px;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col {
+    flex: 1 0 0%;
 }
