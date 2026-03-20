@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 const githubUsuario = "lucianoarantesf";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const fotoPerfilSrc = `${basePath}/imagens/foto-perfil.jpeg`;
 
 const contatos = [
   { label: "Telefone", value: "(34) 99900-4556", href: "https://wa.me/5534999004556?text=Ol%C3%A1%20eu%20vi%20seu%20portif%C3%B3lio.%0A%0AEstou%20entrando%20em%20contato%20atrav%C3%A9s%20dele..." },
@@ -252,7 +254,7 @@ export default function Home() {
           <div className="heroPhotoWrap">
             <div className="heroPhotoFrame">
               <Image
-                src="/imagens/foto-perfil.jpeg"
+                src={fotoPerfilSrc}
                 alt="Foto de perfil de Luciano Arantes Filho"
                 width={320}
                 height={320}
