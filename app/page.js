@@ -112,7 +112,7 @@ const formacao = {
   periodo: "fev/2016 - ago/2023"
 };
 
-const certificacoes = ["Certificado de autoridade: Delphi Javascript (40 Horas)"];
+const certificacoes = ["Certificado de autoridade: Delphi - DevMedia", "Certificado de curso: Javascriopt (40 Horas) - Curso em Video"];
 
 const projetoDestaque = {
   nome: "Web Edificar",
