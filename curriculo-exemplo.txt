@@ -1,0 +1,6 @@
+Substitua este arquivo pelo seu currículo em PDF.
+
+Sugestão:
+1) Apague este arquivo.
+2) Adicione seu arquivo como public/curriculo.pdf.
+3) Atualize o link no app/page.js para /curriculo.pdf.
