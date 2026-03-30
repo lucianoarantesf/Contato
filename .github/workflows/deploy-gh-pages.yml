@@ -17,7 +17,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_BASE_PATH: /Contato
+      NEXT_PUBLIC_BASE_PATH: /contato
     steps:
       - name: Clone repository
         env:
